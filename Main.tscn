@@ -13,9 +13,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -134.0
-margin_top = -254.0
-margin_right = 135.0
+margin_left = -212.0
+margin_top = -493.0
+margin_right = 269.0
 margin_bottom = 158.0
 
 [node name="Weight" type="Control" parent="Buttons"]
@@ -23,14 +23,14 @@ anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -37.5
 margin_right = 37.5
-margin_bottom = 74.0
+margin_bottom = 92.0
 
 [node name="Label" type="Label" parent="Buttons/Weight"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -56.5
-margin_right = 56.5
-margin_bottom = 24.0
+margin_left = -105.0
+margin_right = 105.0
+margin_bottom = 46.0
 custom_fonts/font = ExtResource( 2 )
 text = "Weight in Kg"
 __meta__ = {
@@ -58,16 +58,16 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -38.5
-margin_top = -88.0
+margin_top = -115.5
 margin_right = 36.5
-margin_bottom = -24.0
+margin_bottom = -23.5
 
 [node name="Label" type="Label" parent="Buttons/Amount"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -54.0
-margin_right = 54.0
-margin_bottom = 24.0
+margin_left = -101.0
+margin_right = 101.0
+margin_bottom = 46.0
 custom_fonts/font = ExtResource( 2 )
 text = "Amount in L"
 __meta__ = {
@@ -91,20 +91,20 @@ __meta__ = {
 
 [node name="Vol" type="Control" parent="Buttons"]
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 1.0
 margin_left = -37.5
-margin_top = 12.0
+margin_top = -291.0
 margin_right = 37.5
-margin_bottom = 74.0
+margin_bottom = -201.0
 
 [node name="Label" type="Label" parent="Buttons/Vol"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -35.0
-margin_right = 35.0
-margin_bottom = 24.0
+margin_left = -65.5
+margin_right = 65.5
+margin_bottom = 46.0
 custom_fonts/font = ExtResource( 2 )
 text = "Vol in %"
 __meta__ = {
@@ -130,9 +130,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -65.0
-margin_top = -40.0
-margin_right = 65.0
+margin_left = -76.5
+margin_top = -52.0
+margin_right = 76.5
 custom_fonts/font = ExtResource( 2 )
 text = "Female"
 items = [ "Male", null, false, 1, null, "Female", null, false, 2, null ]
@@ -144,7 +144,7 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -119.0
-margin_top = -136.0
+margin_top = -375.0
 margin_right = 120.0
 margin_bottom = -18.0
 
@@ -153,14 +153,14 @@ anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -86.5
 margin_right = 86.5
-margin_bottom = 39.0
+margin_bottom = 90.0
 
 [node name="Label" type="Label" parent="Result/Result"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -92.0
-margin_right = 92.0
-margin_bottom = 24.0
+margin_left = -177.0
+margin_right = 177.0
+margin_bottom = 46.0
 custom_fonts/font = ExtResource( 2 )
 text = "Alcohol in your blood"
 __meta__ = {
@@ -172,9 +172,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -11.5
-margin_top = -14.0
-margin_right = 11.5
+margin_left = -26.0
+margin_top = -46.0
+margin_right = 26.0
 custom_fonts/font = ExtResource( 2 )
 text = "0.6"
 __meta__ = {
@@ -187,15 +187,15 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -82.5
-margin_top = -40.0
+margin_top = -94.0
 margin_right = 82.5
 
 [node name="Label" type="Label" parent="Result/Sober"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -94.0
-margin_right = 94.0
-margin_bottom = 24.0
+margin_left = -176.0
+margin_right = 176.0
+margin_bottom = 46.0
 custom_fonts/font = ExtResource( 2 )
 text = "Time to be sober in h"
 
@@ -204,11 +204,23 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -11.5
-margin_top = -14.0
-margin_right = 11.5
+margin_left = -21.0
+margin_top = -46.0
+margin_right = 21.0
 custom_fonts/font = ExtResource( 2 )
 text = "10"
+
+[node name="Label" type="Label" parent="Result"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -350.5
+margin_top = -23.0
+margin_right = 350.5
+margin_bottom = 23.0
+custom_fonts/font = ExtResource( 2 )
+text = "ALL THESE NUMBERS ARE ESTIMATED!!!"
 
 [connection signal="value_changed" from="Buttons/Weight/input" to="." method="_on_weights_value_changed"]
 [connection signal="value_changed" from="Buttons/Amount/input" to="." method="_on_amount_value_changed"]
